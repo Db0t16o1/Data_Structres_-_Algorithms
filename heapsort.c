@@ -1,3 +1,4 @@
+//This is max heap implementation 
 #include<stdio.h>
 #include<math.h>
 //included math.h for the ceil function
@@ -30,7 +31,7 @@ return 0;
 }
 
 int exhibitor(int* x,int marker){
-int temp;
+int temp;printf("Decresing order :");int length = marker; 
 while(marker >= 0){
 printf("%d\t",x[0]);
 temp = x[marker];
@@ -38,7 +39,9 @@ x[marker] = x[0];
 x[0] = temp;
 marker--;
 labour_max_heap(x,marker,0);
-}
+}printf("\n Increasing order:")
+	for(int i=0;i<=length;i++)
+		printf("%d\t",x[i]);
 return 0;
 }
 
