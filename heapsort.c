@@ -39,7 +39,7 @@ x[marker] = x[0];
 x[0] = temp;
 marker--;
 labour_max_heap(x,marker,0);
-}printf("\n Increasing order:")
+}printf("\n Increasing order:");
 	for(int i=0;i<=length;i++)
 		printf("%d\t",x[i]);
 return 0;
